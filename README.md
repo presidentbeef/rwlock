@@ -12,8 +12,9 @@ This library provides thread-level locking.
 RWLock should work with:
 
 * MRI 1.8.7
-* MRI 1.9.3 (with monkey patch)
+* MRI 1.9.3 (with monkey patch before p545)
 * MRI 2.0.0 (with monkey patch)
+* MRI 2.1.1
 * JRuby
 
 Does not with with:
@@ -21,6 +22,7 @@ Does not with with:
 * MRI 2.1.0 due to [bug in SizedQueue#push](http://bugs.ruby-lang.org/issues/9302)
 
 Monkey patches are provided for MRI 1.9.3 and 2.0.0 because SizedQueue#clear [also has a bug](https://bugs.ruby-lang.org/issues/9342).
+
 ### Usage
 
 ```ruby

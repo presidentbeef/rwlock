@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "rwlock"
-  s.version = "0.0.1"
+  s.version = "1.0.0"
   s.authors = ["Justin Collins"]
   s.summary = "Simple readers-writer lock."
   s.description = "Simple thread-level readers-writer lock in pure Ruby. Allows multiple readers to access a resource while writers get exclusive access."
