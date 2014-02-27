@@ -1,5 +1,5 @@
 if not SizedQueue.instance_methods(false).include? :clear
-  if RUBY_VERSION == "1.9.3"
+  if RUBY_VERSION == "1.9.3" and RUBY_PATCHLEVEL < 545
     class SizedQueue
       # Removes all objects from the queue and wakes waiting threads, if any.
       def clear
